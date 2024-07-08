@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/Purple"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/Purple">
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:text="Login"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        />
+
+        <TextView
+            android:id="@+id/txt_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textSize="15sp"
+            android:gravity="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_log"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/firstcard"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_log"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="30dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Welcome Back!!"
+                android:textColor="@color/Purple"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:padding="8dp"
+                android:drawablePadding="15dp"
+                android:hint="Username"
+                android:textColorHint="@color/Charcoal" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:padding="8dp"
+                android:drawablePadding="15dp"
+                android:hint="Password"
+                android:textColorHint="@color/Charcoal"
+                />
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Login"-->
+<!--                android:textSize="20dp"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                />-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="BlackStone 🪨"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/Charcoal"
+            android:gravity="center"
+            android:elevation="50dp"
+            android:layout_marginBottom="10dp"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="@color/Charcoal"
+            android:shadowRadius="100"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/firstcard"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

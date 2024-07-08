@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Purple">#AE92D3</color>
+    <color name="TiffanyBlue">#9DD0DA</color>
+    <color name="Charcoal">#3D4957</color>
+    <color name="SandDollar">#DBC7A6</color>
+
+</resources>
